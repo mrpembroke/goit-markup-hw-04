@@ -184,11 +184,11 @@ body {
 	letter-spacing: 0.02em;
 	text-decoration: none;
 }
-
+/* 
 .address-footer .link:hover,
 .address-footer .link:focus {
 	color: var(--accent-color);
-}
+} */
 
 .address-header {
 	display: flex;
@@ -197,6 +197,12 @@ body {
 .address-header .item + .item {
 	margin-left: 30px;
 }
+/* 
+.address-header .item:hover,
+.address-header .item:focus {
+	--color1: var(--accent-color);
+	color: var(--accent-color);
+} */
 
 /* .mail::before {
 	display: inline-flex;
@@ -221,7 +227,9 @@ body {
 }
 
 .mail-to:hover,
-.phone-to:hover {
+.mail-to:focus,
+.phone-to:hover,
+.phone-to:focus {
 	--color1: var(--accent-color);
 }
 
@@ -312,7 +320,7 @@ body {
 }
 
 .hero .hero-content:focus {
-	color: var(--accent-color);
+	color: var(--third-text-color);
 }
 
 /* Features Features Features*/
@@ -496,17 +504,16 @@ body {
 	/* background-color: lime; */
 }
 
-.socials-item:hover {
+.socials-item:hover,
+.socials-item:focus {
+	--color4: var(--third-text-color);
 	background-color: var(--accent-color);
 }
 
 .icon-socials {
+	display: flex;
 	width: 20px;
 	height: 20px;
-}
-
-.icon-socials:hover {
-	--color4: var(--third-text-color);
 }
 
 /* Clients Clients Clients */
@@ -531,7 +538,8 @@ body {
 	margin-left: 30px;
 }
 
-.icon-clients:hover {
+.clients-item:hover,
+.clients-item:focus {
 	--color4: var(--accent-color);
 }
 
@@ -573,11 +581,13 @@ body {
 	border-radius: 50%;
 }
 
-.media-item:hover {
+.media-item:hover,
+.media-item:focus {
 	background-color: var(--accent-color);
 }
 
 .icon-media {
+	display: flex;
 	width: 20px;
 	height: 20px;
 	--color4: var(--third-text-color);
@@ -628,6 +638,7 @@ body {
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 /* Portfolio Portfolio Portfolio */
+
 /* Button */
 .section .section-btn {
 	padding: 6px 22px;
@@ -704,7 +715,8 @@ body {
 	overflow: hidden;
 }
 
-.portfolio-item:hover {
+.portfolio-item:hover,
+.portfolio-item:focus {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
